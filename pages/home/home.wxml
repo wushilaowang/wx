@@ -1,3 +1,30 @@
 <!--Pages/home/home.wxml-->
-<text>hello world</text>
-<button size='mini' class="hello">按钮</button>
+<view>班级: {{class}}</view>
+<view wx:for='{{students}}'>{{item.name}}-{{item.age}}</view>
+<view>人数: {{counter}}</view>
+<button size="mini" bindtap="handleAdditon">+</button>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权{{lucyName}}</button>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
+<view>a</view>
