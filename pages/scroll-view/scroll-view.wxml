@@ -1,0 +1,8 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+<scroll-view scroll-x class="container1" upper-threshold>
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="container2" scroll-y bindscroll="handleBindScroll">
+  <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>

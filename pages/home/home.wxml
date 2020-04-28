@@ -1,3 +1,7 @@
 <!--Pages/home/home.wxml-->
-<text>hello world</text>
-<button size='mini' class="hello">按钮</button>
+<!-- 行内元素 -->
+<!-- 文本是否能被选取 -->
+<text selectable>hello world</text>
+<!-- 是否解码 -->
+<text decode>5 &gt; 3</text>
+

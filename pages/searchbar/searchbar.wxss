@@ -1,0 +1,12 @@
+/* pages/searchbar/searchbar.wxss */
+@import '../../assets/style/searchbar.wxss';
+@import '../../assets/style/weui-icon.wxss';
+
+
+.a::after {
+  content: '';
+  background-image: url('../../assets/image/category.jpg');
+  background-size: 20rpx 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}

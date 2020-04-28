@@ -1,6 +1,12 @@
 {
   "pages": [
+    "pages/wxs/wxs",
+    "pages/wxss/wxss",
+    "pages/searchbar/searchbar",
+    "pages/scroll-view/scroll-view",
+    "pages/image/image",
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap52.json"
 }

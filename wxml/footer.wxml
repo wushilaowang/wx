@@ -1,0 +1,5 @@
+  <template name="footer">
+    <view>{{content}}</view>
+    <view>版权</view>
+    <include src="./header.wxml"/>
+  </template>

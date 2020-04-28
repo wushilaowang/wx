@@ -1,0 +1,5 @@
+<!--pages/image/image.wxml-->
+<image src="../../assets/image/category.jpg"></image>
+<button bindtap="handleUploadImage">上传图片</button>
+<image src="{{imageUrl1}}"></image>
+<image bindload="handleBindLoad" lazy-load wx:for='{{10}}' src="https://pic.rmb.bdstatic.com/7950c15d774543c519bebdbb9b74b1f3.jpeg"></image>

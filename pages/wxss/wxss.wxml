@@ -1,0 +1,5 @@
+<!--pages/wxss/wxss.wxml-->
+<import src="../../wxml/footer.wxml"/>
+<template is='footer' data="{{content: '底部'}}"></template>
+<button size="mini" bindtap="handleChangeColor">按钮</button>
+<view class='text {{isActive ? "active":""}}'>变色</view>
