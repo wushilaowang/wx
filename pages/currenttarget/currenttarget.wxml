@@ -1,0 +1,22 @@
+<!--pages/currenttarget/currenttarget.wxml-->
+<view class="outer" bindtap="handleOuter">
+  <view class="inner" bindtap="handleInner">
+  </view>
+</view>
+<!-- 事件传值 -->
+<view class="container">
+<block wx:for="{{title}}" wx:key="{{index}}">
+  <view class="item" bindtap="handleTitleClick" data-item="{{item}}"
+  data-index="{{index}}">{{item}}
+  </view>
+</block>
+</view>
+<!-- 事件冒泡和捕获 -->
+<!-- 先捕获后冒泡,捕获由外向内,冒泡由内向外 -->
+<!-- 不继续向内捕获或向外冒泡 capture-catch:tap catchtap -->
+<view class="box1" capture-bind:tap="catch1" bindtap="bind1">
+  <view class="box2" capture-bind:tap="catch2" bindtap="bind2">
+    <view class="box3" capture-bind:tap="catch3" catchtap="bind3"></view>
+  </view>
+</view>
+

@@ -1,0 +1,10 @@
+<!--pages/cpn/cpn.wxml-->
+<view>{{counter}}</view>
+<my-cpn titleclass="red" name="{{name}}" bind:increament="fatherIncreament"/>
+<my-cpn titleclass="blue"/>
+<tabcontrol id="tabcontrol" tabControlTitle="{{['left', 'middle', 'right']}}" bind:tabClick="handleTabClick"/>
+<button bindtap="handleChangeSon" size="mini">父页面按钮</button>
+<my-slot>
+  <button slot="slot3">aa</button>
+  <slider slot="slot2"></slider>
+</my-slot>

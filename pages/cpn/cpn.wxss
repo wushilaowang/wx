@@ -1,0 +1,7 @@
+/* pages/cpn/cpn.wxss */
+.red {
+  color: red;
+}
+.blue {
+  color: blue
+}

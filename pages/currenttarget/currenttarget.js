@@ -1,26 +1,43 @@
-// Pages/home/home.js
+// pages/currenttarget/currenttarget.js
 Page({
-
-  handleTouchStart() {
-    console.log('handleTouchStart')
+  handleInner(event) {
+    console.log(event)
   },
-  handleTouchEnd() {
-    console.log('handleTouchEnd')
+  handleOuter(event) {
+    console.log(event)
   },
-  handleTouchMove() {
-    console.log('handleTouchMove')
+  //事件传值
+  handleTitleClick(event) {
+    console.log(event.currentTarget.dataset)
   },
-  handleLongPress() {
-    console.log('handleLongPress')
+  //冒泡捕获
+  bind1() {
+    console.log('bind1')
   },
-  handleTap() {
-    console.log('handleTap')
+  catch1() {
+    console.log('catch1')
+  },
+  bind2() {
+    console.log('bind2')
+  },
+  catch2() {
+    console.log('catch2')
+  },
+  bind3() {
+    console.log('bind3')
+  },
+  catch3() {
+    console.log('catch3')
   },
   /**
    * 页面的初始数据
    */
   data: {
-
+    title: [
+      '上',
+      '中',
+      '下'
+    ]
   },
 
   /**

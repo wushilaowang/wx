@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-cpn": "/components/my-cpn/my-cpn",
+    "tabcontrol": "/components/tabcontrol/tabcontrol",
+    "my-slot": "/components/my-slot/my-slot"
+  }
+}

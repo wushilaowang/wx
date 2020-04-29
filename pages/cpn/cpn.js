@@ -1,26 +1,41 @@
-// Pages/home/home.js
+// pages/cpn/cpn.js
 Page({
 
-  handleTouchStart() {
-    console.log('handleTouchStart')
-  },
-  handleTouchEnd() {
-    console.log('handleTouchEnd')
-  },
-  handleTouchMove() {
-    console.log('handleTouchMove')
-  },
-  handleLongPress() {
-    console.log('handleLongPress')
-  },
-  handleTap() {
-    console.log('handleTap')
-  },
   /**
    * 页面的初始数据
    */
   data: {
+    name: 'lucy',
+    counter: 0
+  },
 
+  //接收子页面事件
+  fatherIncreament(event) {
+    console.log(event.detail)
+    this.setData({
+      counter: this.data.counter + 1
+    }) 
+  },
+  handleTabClick(event) {
+    console.log(event)
+  },
+  //改变组件data
+  handleChangeSon() {
+    //获取组件对象
+    const tabcontrol_cpn = this.selectComponent("#tabcontrol")
+    console.log(tabcontrol_cpn)
+    // 通过组件的methods修改
+    tabcontrol_cpn.counterIncreamnet(2);
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    setTimeout(() => {
+      this.setData({
+        name: 'hanmeimei'
+      })
+    },3000)
   },
 
   /**
@@ -37,12 +52,6 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
 
   /**
    * 生命周期函数--监听页面隐藏

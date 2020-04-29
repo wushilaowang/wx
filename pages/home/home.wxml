@@ -1,3 +1,10 @@
 <!--Pages/home/home.wxml-->
 <text>hello world</text>
 <button size='mini' class="hello">按钮</button>
+<view class="box1" 
+  bind:touchstart='handleTouchStart'
+  bind:touchend='handleTouchEnd'
+  bind:touchmove='handleTouchMove'
+  bind:longpress='handleLongPress'
+  bind:tap='handleTap'
+></view>

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/cpn/cpn",
+    "pages/currenttarget/currenttarget",
     "pages/home/home",
     "pages/about/about"
   ]
