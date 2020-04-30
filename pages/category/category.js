@@ -1,4 +1,4 @@
-// Pages/about/about.js
+// pages/category/category.js
 Page({
 
   /**
