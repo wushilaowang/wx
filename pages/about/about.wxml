@@ -1,2 +1,7 @@
 <!--Pages/about/about.wxml-->
-<text>Pages/about/about.wxml</text>
+<text>关于页</text>
+<navigator url="/pages/home/home">到home页</navigator>
+<navigator url="/pages/detail/detail" open-type="switchTab">detail</navigator>
+<navigator url="/pages/home/home?name=lucy&age=18">到homeQuery传数据</navigator>
+<view>关于页数据:{{title}}</view>
+<button bindtap="handleNavigate">函数跳转</button>

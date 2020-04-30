@@ -1,3 +1,6 @@
 <!--Pages/home/home.wxml-->
 <text>hello world</text>
-<button size='mini' class="hello">按钮</button>
+<navigator open-type="navigateBack">返回上一页</navigator>
+<button size='mini' class="hello" bindtap="handleGetToken">按钮</button>
+<button bindtap="handleBack">函数返回</button>
+ 

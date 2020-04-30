@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<text>详情页</text>
+<navigator open-type="navigateBack">返回上一页</navigator>

@@ -1,16 +1,11 @@
-// Pages/about/about.js
+// pages/detail/detail.js
 Page({
-  //页面跳转函数
-  handleNavigate() {
-    wx.navigateTo({
-      url: '/pages/home/home?name=laowang&age=38',
-    })
-  },
+
   /**
    * 页面的初始数据
    */
   data: {
-    title: 'aboutData'
+
   },
 
   /**
